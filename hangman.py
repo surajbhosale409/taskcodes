@@ -44,29 +44,21 @@ def hangman (questns,questionsAsked,count):
 
         print("\n\nYour initial Guesses: ",guessList)
         print("Gueses Left: ",guesses)
-        g = input("\n\nEnter Guess: ").upper()
+        inp = input("\n\nEnter Guess: ").upper()
 
-        while True:
-            if len(g)!=1:
-                print("Enter Single character only!")
-                g = input("\nEnter Guess: ").upper()
+        for g in inp:
+            if g in guessList:
+                input("\n Character Already Guessed! Please Try Again.\n (Press Enter to continue)")
             else:
-                break
-
-        while g in guessList:
-            print("\n Character Already Guessed! Please Try Again.")
-            g = input("\nEnter Guess: ").upper()
-
-        guessList.append(g)
-
-        if g not in answer:
-            guesses -=1
-            if guesses == 0:
-                print("OOPS! You're out of guesses!")
-                print("The correct answer is", answer.upper())
-                #print("Hope To See You Back soon!\n")
-                # exit()
-                return
+                guessList.append(g)
+                if g not in answer:
+                    guesses -=1
+                    if guesses == 0:
+                        print("OOPS! You're out of guesses!")
+                        print("The correct answer is", answer.upper())
+                        #print("Hope To See You Back soon!\n")
+                        # exit()
+                        return
 
 
     print("\nCongratulations! Correct Answer!!!")
