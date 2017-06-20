@@ -22,7 +22,10 @@ def check(g,a,ua):
 			previndex=index
 			index=a.find(i,index)
 			if index == -1:
-				break
+				i=i.upper()
+				index=a.find(i,previndex)
+				if index == -1:
+					break
  		  	Lua=list(ua)
 			Lua.pop(index)
 			Lua.insert(index,i)
@@ -40,30 +43,31 @@ def main():
 	AL=QAL[1]
         CAC=0
 	QC=len(QL)-1
-
+        c=0
         for j in range(1,len(QL)):
 		gc=5
         	usrans=""
         	qaindex=random.randint(0,(len(QL)-2))
-		print qaindex
 		for i in range(1,len(AL[qaindex])):
 	   		usrans=usrans+"_"
 
+                usrans=check(" ",AL[qaindex],usrans)
 		for i in range(0,gc):
 			os.system("clear")
                 	print " "
 			print QL[qaindex]
 			print usrans
         		print "Guesses left ",gc
-	        	guess=raw_input("Enter Guess")
-		        usrans=check(guess,AL[qaindex],usrans)
-        		gc=gc-1
-		        if (usrans+"\n") == AL[qaindex]:
-				print "Correct Answer!!!"
+	        	guess=raw_input("Enter Guess: ")
+			usrans=check(guess,AL[qaindex],usrans)
+			gc=gc-1
+			if (usrans+"\n") == AL[qaindex]:
+				print "\n", usrans, " \nCorrect Answer!!!"
  				CAC=CAC+1
+				c=1
 				break
-       
-		print "Answer was: ", AL[qaindex]
+                if c != 1:
+			print "\nAnswer was: ", AL[qaindex]
 		QL.pop(qaindex)
 		AL.pop(qaindex)
 		raw_input("Press Enter for next Question")
