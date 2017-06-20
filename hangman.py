@@ -52,15 +52,17 @@ def main():
 	   		usrans=usrans+"_"
 
                 usrans=check(" ",AL[qaindex],usrans)
-		for i in range(0,gc):
+		while gc>0:
 			os.system("clear")
                 	print " "
 			print QL[qaindex]
 			print usrans
         		print "Guesses left ",gc
 	        	guess=raw_input("Enter Guess: ")
+			prevuans=usrans
 			usrans=check(guess,AL[qaindex],usrans)
-			gc=gc-1
+			if usrans == prevuans:
+				gc=gc-1
 			if (usrans+"\n") == AL[qaindex]:
 				print "\n", usrans, " \nCorrect Answer!!!"
  				CAC=CAC+1
