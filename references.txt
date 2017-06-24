@@ -1,0 +1,16 @@
+Outline of artificial intelligence : https://en.wikipedia.org/wiki/Outline_of_artificial_intelligence
+Data analysis: https://en.wikipedia.org/wiki/Data_analysis
+Data warehouse : https://en.wikipedia.org/wiki/Data_warehouse
+Data mining : https://en.wikipedia.org/wiki/Data_mining
+Machine Learning : https://en.wikipedia.org/wiki/Machine_learning
+Data Science : https://en.wikipedia.org/wiki/Data_science
+
+
+
+************************************************
+Tutorials:
+1. www.dataquest.io
+2. https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
+3. 
+
+************************************************
