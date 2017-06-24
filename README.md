@@ -61,20 +61,23 @@ Extra:
     The Goal: The program will first randomly generate a number unknown to the user. The user needs to guess what that number is. (In other words, the user needs to be able to input information.) If the user’s guess is wrong, the program should return some sort of indication as to how wrong (e.g. The number is too high or too low). If the user guesses correctly, a positive indication should appear. You’ll need functions to check if the user input is an actual number, to see the difference between the inputed number and the randomly generated numbers, and to then compare the numbers.
     [i] Keep limited number of guess.
 
-      Completion    Suraj   Sufiyan
-                     [0]      [0]
+     
+        Completion    Suraj   Sufiyan
+                       [0]      [0]
 
 
     
 [4] Write a code to create a valid sudoko generator. (Difficult)
-     Completion    Suraj   Sufiyan
-                     [0]      [0]
+     
+        Completion    Suraj   Sufiyan
+                       [0]      [0]
                      
 [5] Write a code to create a valid sudoko Solver. (Difficult)
-     Completion    Suraj   Sufiyan
-                     [0]      [0]
+     
+        Completion    Suraj   Sufiyan
+                       [0]      [0]
                      
- [6] BLACKJACK:
+[6] BLACKJACK:
     How to play (Rules): http://www.bicyclecards.com/how-to-play/blackjack/
     Online Simulation for understanding better: https://wizardofodds.com/play/blackjack/
 
@@ -89,8 +92,9 @@ Win - the player wins as much as he bet. If you bet $10, you win $10 from the de
 Blackjack (natural) - the player wins 1.5 times the bet. With a bet of $10, you keep your $10 and win a further $15 from the dealer.
 Push - the hand is a draw. The player keeps his bet, neither winning nor losing money.
     
-   Completion    Suraj   Sufiyan
-                  [0]      [0]
+
+    Completion    Suraj   Sufiyan
+                   [0]      [0]
                      
 
 
