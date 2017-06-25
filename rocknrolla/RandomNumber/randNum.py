@@ -13,20 +13,20 @@ def check(randNum,guessNum,gc):
   else:
    print ("Your Number is Low")
   if abs(randNum-guessNum)>50:
-   print ("You are far away")
+   print ("You are far away (difference is greater than 50)")
   elif abs(randNum-guessNum)>10:
-   print ("You are close")
+   print ("You are close (difference is between 10 to 50")
   else:
-   print ("You are very close")
+   print ("You are very close (difference is between 1 to 10")
   return 1 
    
 
 def main():
   gc=8
   randNum=random.randint(0,2000)
-  print ("Guess The Number \nInitial Hints\nMaximum number is 2000")
+  print ("Guess The Number \nInitial Hints\nMaximum number can be 2000")
   if randNum<1000:
-   print ("Number is below 1000")
+   print ("Current Number is below 1000")
   else:
    print ("Number is above or equal to 1000")
 
