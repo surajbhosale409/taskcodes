@@ -1,4 +1,4 @@
-import os,random
+import os,random,math
 
 
 def initHints(randNum):
@@ -20,7 +20,7 @@ def initHints(randNum):
   return iniHints
 
 
-def check(randNum,guessNum,gc):
+def check(randNum,guessNum,gc,divisors):
   itrHints=[]
   itrHints.append("Hints from previous guess:")
   if guessNum>randNum:
@@ -33,15 +33,27 @@ def check(randNum,guessNum,gc):
    itrHints.append("You are close!!! (difference is between 10-50)")
   else:
    itrHints.append("You are very close!!! (difference is less than 10)")
+  if len(divisors)==0:
+   itrHints.append("Number is prime")
+  else:
+   i=5-gc
+   temp=[]
+   for j in range(0,i):
+     if j>=len(divisors):
+      break
+     temp.append(divisors[j])
+   itrHints.append("Number is divisible by "+str(temp))
+
   return itrHints  
     
 
 def main():
-  stat=1
   while True:
-   c=gc=8
+   c=gc=5
+   stat=1
    itrHints=[]
    randNum=random.randint(0,2000)
+   divisors=list(filter(lambda x: randNum%x==0,range(3,int(math.sqrt(randNum)))))
    for i in range(0,c):
      os.system("clear")
      print ("Guess The Number")
@@ -61,7 +73,7 @@ def main():
         print(itrHint)
        ind+=1
      print ("You have ",gc," Guesses ")
-     if gc!=8:
+     if gc!=5:
       print ("Previous Guess is ",prevGuess)
      prevGuess=guessNum=int(input("Enter Guess: "))
      
@@ -69,8 +81,8 @@ def main():
       stat=0
       break
      gc-=1
-     itrHints=check(randNum,guessNum,gc)   
-
+     itrHints=check(randNum,guessNum,gc,divisors)   
+    
    if stat==0:
     print ("Congrats!!! You Guessed Correct Number: ",randNum)
    else:
