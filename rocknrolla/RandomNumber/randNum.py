@@ -3,7 +3,8 @@ import os,random
 
 def initHints(randNum):
   iniHints=[]
-  iniHints.append("Is a "+str(len(str(randNum))))
+  iniHints.append("Initial Hints:")
+  iniHints.append("Is a "+str(len(str(randNum)))+" digit number")
   lowLim=randNum-(randNum//10)
   upLim=randNum+((randNum//10)//10)+20
   if lowLim<0:
@@ -21,7 +22,7 @@ def initHints(randNum):
 
 def check(randNum,guessNum,gc):
   itrHints=[]
-  
+  itrHints.append("Hints from previous guess:")
   if guessNum>randNum:
    itrHints.append("Your Number is High")
   else:
@@ -31,23 +32,34 @@ def check(randNum,guessNum,gc):
   elif abs(randNum-guessNum)>10:
    itrHints.append("You are close!!! (difference is between 10-50)")
   else:
-   itrHints.append("You are very close!!! (difference is less than 10")
+   itrHints.append("You are very close!!! (difference is less than 10)")
   return itrHints  
     
 
 def main():
+  stat=1
   while True:
    c=gc=8
    itrHints=[]
    randNum=random.randint(0,2000)
    for i in range(0,c):
      os.system("clear")
-     print ("Guess The Number \nInitial Hints")
+     print ("Guess The Number")
      iniHints=initHints(randNum)
+     ind=0
      for hint in iniHints:
-      print (hint)
+      if ind!=0:
+       print ("[",ind,"] ",hint)
+      else:
+       print(hint)
+      ind+=1
+     ind=0
      for itrHint in itrHints:
-      print (itrHint)
+       if ind!=0:
+        print ("[",ind,"] ",itrHint)
+       else:
+        print(itrHint)
+       ind+=1
      print ("You have ",gc," Guesses ")
      if gc!=8:
       print ("Previous Guess is ",prevGuess)
@@ -66,5 +78,5 @@ def main():
    ch=input("Play Again (Y/N)")
    if ch=='N' or ch == 'n':
     break
-      
+             
 main()
