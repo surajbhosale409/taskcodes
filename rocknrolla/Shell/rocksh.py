@@ -13,11 +13,17 @@ def main():
      pwd=os.getcwd()
      currentUser=os.getlogin()
      homeDir="/home/"+currentUser
+     rootHomeDir="/root"
      if homeDir in pwd:
         l=list(pwd)
         l=l[len(homeDir):len(pwd)]
         pwd="".join(l)
         pwd="[~]"+pwd
+     if rootHomeDir in pwd:
+         l=list(pwd)
+         l=l[len(rootHomeDir):len(pwd)]
+         pwd="".join(l)
+         pwd="[/]"+pwd
 
      cmdStr=input(currentUser+"@rocksh:"+pwd+"$ ")
      cmdList=cmdStr.split()
@@ -32,7 +38,10 @@ def main():
      elif cmdList[0]=="rmdir":
       os.rmdir(cmdList[1])
      elif cmdList[0]=="cd":
-      os.chdir(cmdList[1])
+         try:
+             os.chdir(cmdList[1])
+         except PermissionError:
+             print ("Permission Denied")
      elif cmdList[0]=="ls":
       print ("\n".join(os.listdir(os.getcwd())))
      elif cmdList[0]=="rm":
