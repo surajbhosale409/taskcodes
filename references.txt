@@ -9,8 +9,11 @@ Data Science : https://en.wikipedia.org/wiki/Data_science
 
 ************************************************
 Tutorials:
-1. www.dataquest.io
-2. https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
-3. 
+[1]. www.dataquest.io
 
+[2]. https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
+
+[3]. https://www.udemy.com/data-science-and-machine-learning-with-python-hands-on/?siteID=oCUR7eOwwME-q2f24eAxavbQGpyMqcGOWw&LSNPUBID=oCUR7eOwwME (DATA SCIENCE , DATA MINING, MACHINE LEARNING WITH PYTHON)
+
+[4]. https://www.youtube.com/watch?v=-Rf4fZDQ0yw&list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4 (Python for Data Science)
 ************************************************
