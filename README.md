@@ -5,7 +5,7 @@ Tasks
     Implementing own shell that will support [cd,ls,cat,mkdir,rmdir,rm] commands (you can add more) in python.
     
     Completion    Suraj   Sufiyan
-                   [0]      [0]
+                   [1]      [0]
 
 [2] 
     Hangman
@@ -62,7 +62,7 @@ Extra:
     [i] Keep limited number of guess.
 
       Completion    Suraj   Sufiyan
-                     [0]      [0]
+                     [1]      [1]
 
 
     
