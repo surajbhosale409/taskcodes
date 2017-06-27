@@ -1,9 +1,9 @@
 import os
 
 def cat(fname):
-	fh=open(fname,"r")
-	data=fh.read()
-	print (data)
+    fh=open(fname,"r")
+    data=fh.read()
+    print (data)
 
 
 def main():
@@ -11,7 +11,15 @@ def main():
    print ("'RockSH' A shell by Suraj R Bhosale")
    while True:
      pwd=os.getcwd()
-     cmdStr=input("rocksh@deb~"+pwd+"$ ")
+     currentUser=os.getlogin()
+     homeDir="/home/"+currentUser
+     if homeDir in pwd:
+        l=list(pwd)
+        l=l[len(homeDir):len(pwd)]
+        pwd="".join(l)
+        pwd="[~]"+pwd
+
+     cmdStr=input(currentUser+"@rocksh:"+pwd+"$ ")
      cmdList=cmdStr.split()
      if cmdList[0]=="exit":
       exit(0)
