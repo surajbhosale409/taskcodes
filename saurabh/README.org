@@ -1,0 +1,25 @@
+* Py_Shell
+  Shell command implementation in python.
+
+* Source code
+  src directory
+
+* Documentation
+  docs directory
+
+* How to run?
+
+  #+BEGIN_SRC sh
+  cd src/
+  python run_shell.py
+  #+END_SRC
+* Supported commands
+
+  + ls
+  + cd
+  + rm
+  + mkdir
+  + rmdir
+  
+* Note
+  Feel free to change, modify, comment, criticize source code. :)

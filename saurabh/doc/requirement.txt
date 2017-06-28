@@ -1,0 +1,4 @@
+[1] termcolor:
+    Used termcolor for getting color for words on terminal.
+    If you do not have package of termcolor then do:
+        sudo pip install termcolor

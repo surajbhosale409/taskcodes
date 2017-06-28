@@ -6,7 +6,7 @@ Note: Update your completion status after pushing the code, so others will let k
     Implementing own shell that will support [cd,ls,cat,mkdir,rmdir,rm] commands (you can add more) in python.
         
     Completion    Suraj   Sufiyan   Pravin   Saurabh
-                   [1]      [0]      [1]       [0]
+                   [1]      [0]      [1]       [1]
     
 
 [2] 
