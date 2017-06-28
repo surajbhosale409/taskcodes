@@ -1,11 +1,13 @@
 # taskcodes
 Tasks
+Note: Update your completion status after pushing the code, so others will let know and refer your code
 
 [1]
     Implementing own shell that will support [cd,ls,cat,mkdir,rmdir,rm] commands (you can add more) in python.
+        
+    Completion    Suraj   Sufiyan   Pravin   Saurabh
+                   [1]      [0]      [1]       [0]
     
-    Completion    Suraj   Sufiyan
-                   [1]      [0]
 
 [2] 
     Hangman
@@ -49,9 +51,8 @@ Example:
     2. The questions or hints maybe hard coded or input via a file.
 
     
-    Completion    Suraj   Sufiyan
-                   [1]      [1]
-
+          Completion    Suraj   Sufiyan   Pravin   Saurabh
+                         [1]      [1]      [1]       [0]
 
 Extra:
    1. Build a complete game with n number of questions to win. Difficulty of questions increases every level ofcourse.
@@ -61,20 +62,23 @@ Extra:
     The Goal: The program will first randomly generate a number unknown to the user. The user needs to guess what that number is. (In other words, the user needs to be able to input information.) If the user’s guess is wrong, the program should return some sort of indication as to how wrong (e.g. The number is too high or too low). If the user guesses correctly, a positive indication should appear. You’ll need functions to check if the user input is an actual number, to see the difference between the inputed number and the randomly generated numbers, and to then compare the numbers.
     [i] Keep limited number of guess.
 
-      Completion    Suraj   Sufiyan
-                     [1]      [1]
-
+        Completion    Suraj   Sufiyan   Pravin   Saurabh
+                       [1]      [1]      [1]       [0]
 
     
 [4] Write a code to create a valid sudoko generator. (Difficult)
-     Completion    Suraj   Sufiyan
-                     [0]      [0]
+            
+            
+        Completion    Suraj   Sufiyan   Pravin   Saurabh
+                       [0]      [0]      [0]       [0]
                      
 [5] Write a code to create a valid sudoko Solver. (Difficult)
-     Completion    Suraj   Sufiyan
-                     [0]      [0]
-                     
- [6] BLACKJACK:
+    
+        Completion    Suraj   Sufiyan   Pravin   Saurabh
+                       [0]      [0]      [0]       [0]                     
+ 
+
+[6] BLACKJACK:
     How to play (Rules): http://www.bicyclecards.com/how-to-play/blackjack/
     Online Simulation for understanding better: https://wizardofodds.com/play/blackjack/
 
@@ -89,8 +93,8 @@ Win - the player wins as much as he bet. If you bet $10, you win $10 from the de
 Blackjack (natural) - the player wins 1.5 times the bet. With a bet of $10, you keep your $10 and win a further $15 from the dealer.
 Push - the hand is a draw. The player keeps his bet, neither winning nor losing money.
     
-   Completion    Suraj   Sufiyan
-                  [0]      [0]
+            Completion    Suraj   Sufiyan   Pravin   Saurabh
+                           [0]      [0]      [0]       [0]
                      
 
 
