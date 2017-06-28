@@ -18,4 +18,6 @@ Tutorials:
 [4]. https://www.youtube.com/watch?v=-Rf4fZDQ0yw&list=PLjgj6kdf_snaw8QnlhK5f3DzFDFKDU5f4 (Python for Data Science)
 
 [5]. https://www.youtube.com/watch?v=yKN8a8jgIN8  (Machine Learning , Natural Language Processing and Artificial Intelligence all in - IBM Watson )
+
+[6]. https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v  (Machine Learning Algorithms With Python)
 ************************************************
