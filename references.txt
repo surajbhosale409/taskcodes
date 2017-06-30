@@ -20,4 +20,6 @@ Tutorials:
 [5]. https://www.youtube.com/watch?v=yKN8a8jgIN8  (Machine Learning , Natural Language Processing and Artificial Intelligence all in - IBM Watson )
 
 [6]. https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v  (Machine Learning Algorithms With Python)
+
+[7] https://in.udacity.com/course/intro-to-machine-learning--ud120/ (Intro to machine learning)
 ************************************************
