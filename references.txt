@@ -4,7 +4,7 @@ Data warehouse : https://en.wikipedia.org/wiki/Data_warehouse
 Data mining : https://en.wikipedia.org/wiki/Data_mining
 Machine Learning : https://en.wikipedia.org/wiki/Machine_learning
 Data Science : https://en.wikipedia.org/wiki/Data_science
-
+parsey Mcparseface : Python API https://github.com/plowman/python-mcparseface
 
 
 ************************************************
