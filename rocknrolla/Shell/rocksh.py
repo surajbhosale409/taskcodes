@@ -56,7 +56,6 @@ def cp(src,dst):
     f2.close()
 
 def vim(filename=""):
-    fname=mkstemp()
     try:
        subprocess.call("/usr/bin/vim")
     except FileNotFoundError:
